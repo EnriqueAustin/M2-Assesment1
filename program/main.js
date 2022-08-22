@@ -19,7 +19,7 @@ var arrCatagories = [
     'Best South African Solution',
     'Best Campus Cup Solution',
 ];
-
+ // Question A
 function logInfo() {
     name = prompt('Enter name');
     university = prompt('Enter university');
@@ -27,7 +27,7 @@ function logInfo() {
 
     console.log('My name is ' + name + ', a student from ' + university + ' and my Github username is ' + githubusername);
 } 
-
+ // Question B
 function rollDice() {
     var total;
     var winner;
@@ -42,18 +42,4 @@ function rollDice() {
 
     console.log(winner);
     alert(winner);
-}
-
-function createfile() {
-    const fs = require('fs')
-  
-    let data = "Learning how to write in a file."
-  
-    fs.writeFile('Output.txt', data, err => {
-
-        if (err) {
-            console.err;
-            return;
-        }
-    });
 }
