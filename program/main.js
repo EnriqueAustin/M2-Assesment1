@@ -2,9 +2,6 @@ var name;
 var university;
 var githubusername;
 
-var dice1;
-var dice2;
-
 var arrCatagories = [
     'Best Consumer Solution',
     'Best Enterprise Solution',
@@ -18,6 +15,7 @@ var arrCatagories = [
     'Best Hackathon Solution',
     'Best South African Solution',
     'Best Campus Cup Solution',
+    'Hawaii category'
 ];
  // Question A
 function logInfo() {
@@ -29,15 +27,15 @@ function logInfo() {
 } 
  // Question B
 function rollDice() {
+    var dice;
     var total;
     var winner;
 
-    dice1 = Math.floor(Math.random() * 6) + 1;
-    dice2 = Math.floor(Math.random() * 6) + 1;
+    dice = Math.floor(Math.random() * 13) + 1;
 
-    console.log(dice1 + ', ' + dice2);
+    console.log(dice);
 
-    total = dice1 + dice2;
+    total = dice;
     winner = arrCatagories[total];
 
     console.log(winner);
